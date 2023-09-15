@@ -1,0 +1,11 @@
+h1{
+    background-color: rgb(255, 0, 179);
+    color: blanchedalmond;
+    height: 40px;
+    
+}
+button{
+    height: 30px;
+    width: 120px;
+    color: red;
+}
