@@ -1,0 +1,20 @@
+{
+    "Employee":[
+        {
+            "eid":101,
+            "ename":"Swapnil",
+            "eaddr":"Pune"
+        },
+        {
+            "eid":102,
+            "ename":"Ankush",
+            "eaddr":"Mumbai"
+        },
+        {
+            "eid":103,
+            "ename":"Samyak",
+            "eaddr":"Nagpur"
+        }
+
+    ]
+}

@@ -1,0 +1,25 @@
+<h1>service Example</h1>
+<table align="center" border="1">
+  <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>ADDRESS</th>
+    <th>MOBILE_NO</th>
+    <th>BANK ID</th>
+    <th>BANK NAME</th>
+    <th>IFSC_CODE</th>
+    <th>ACCOUNT_NO</th>
+  </thead>
+  <tbody  *ngFor="let e of emp">
+    <tr>
+      <td>{{e.eid}}</td>
+      <td>{{e.ename}}</td>
+      <td>{{e.eaddr}}</td>
+      <td>{{e.emob}}</td>
+      <td>{{e.bankDetails.bankId}}</td>
+      <td>{{e.bankDetails.bankName}}</td>
+      <td>{{e.bankDetails.IFSC_code}}</td>
+      <td>{{e.bankDetails.accountNo}}</td>
+    </tr>
+  </tbody>
+</table>

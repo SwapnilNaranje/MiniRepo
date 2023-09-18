@@ -1,0 +1,23 @@
+<h1>Welcome</h1>
+<app-login></app-login>
+
+<table align="center" border="1">
+<thead>
+    <tr>
+        <th>USER ID</th>
+        <th>USER NAME</th>
+        <th>PASSWORD</th>
+        <th colspan="2">EMAIL</th>
+    </tr>
+</thead>
+<tbody *ngFor="let u of users">
+    <tr align="center">
+        <td>{{u.uId}}</td>
+        <td>{{u.uName}}</td>
+        <td>{{u.password}}</td>
+        <td>{{u.email}}</td>
+        <td><button (click)="removeUser(u)">Delete</button></td>
+    </tr>
+</tbody>
+</table>
+<app-create-new-user (sendUser)="getUserDetails($event)"></app-create-new-user> 

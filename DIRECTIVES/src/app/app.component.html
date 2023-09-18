@@ -1,0 +1,35 @@
+<h1>Directives</h1>
+<div *ngIf="false , else abc">
+  If Condition
+</div>
+<ng-template #abc>
+  else condition
+</ng-template>
+<h1>-----------------------------------------------</h1>
+
+<div *ngFor="let s of arr , index as i, odd as o, even as e, first as f, last as l">
+<div *ngIf="l">
+  index-{{i}}={{s}}
+</div>
+</div>
+<h1>-----------------------------------------------</h1>
+Enter value=<input type="text" [(ngModel)]="choice">
+<div [ngSwitch]="choice">
+  <div *ngSwitchCase="'abc'">
+    WELCOME  !!!
+  </div>
+  <div *ngSwitchCase="'swap'">
+    hello cjc !!!
+  </div>
+  <div *ngSwitchCase="'1'">
+    one !!!
+  </div>
+  <div *ngSwitchDefault>
+    Invalid
+  </div>
+</div>
+<div appCustomdirectives>
+WELCOME CJC !!!
+</div>
+
+

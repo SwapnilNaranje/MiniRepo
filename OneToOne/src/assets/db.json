@@ -1,0 +1,44 @@
+{
+    "Employee":[
+        {
+            "eid":101,
+            "ename":"Swap",
+            "eaddr":"Mumbai",
+            "emob":8899668877,
+            "bankDetails":{
+                "bankId":1,
+                "bankName":"SBI",
+                "IFSC_code":"SBIO12364",
+                "accountNo":5004600456
+
+            }
+        },
+        {
+            "eid":102,
+            "ename":"Anuj",
+            "eaddr":"pune",
+            "emob":7899668877,
+            "bankDetails":{
+                "bankId":2,
+                "bankName":"HDFC",
+                "IFSC_code":"HDFC56421",
+                "accountNo":650460045645
+
+            }
+        },
+        {
+            "eid":103,
+            "ename":"Sam",
+            "eaddr":"Nagpur",
+            "emob":9899668877,
+            "bankDetails":{
+                "bankId":3,
+                "bankName":"AXIS",
+                "IFSC_code":"AXIS12367",
+                "accountNo":45003650047
+
+            }
+        }
+
+    ]
+}

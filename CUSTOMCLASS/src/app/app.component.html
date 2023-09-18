@@ -1,0 +1,22 @@
+<h1>Custom class</h1>
+<h1>-----------------------Single Student---------------------</h1>
+ROLL NUMBER = {{stu.srollno}}<br>
+NAME = {{stu.sname}}<br>
+MOBILE NO = {{stu.smob}}<br>
+ADDRESS = {{stu.saddr}}
+<h1>-----------------------Multi Student---------------------</h1>
+<div *ngFor="let s of StuList">
+{{s.srollno}}<br>
+{{s.sname}}<br>
+{{s.smob}}<br>
+{{s.saddr}}<br>
+</div>
+
+<div *ngFor="let n of arr">
+   <div *ngIf="n%2==0" class="x">
+    {{n}}
+   </div>
+   <div *ngIf="n%2==1" class="y">
+    {{n}}
+  </div>
+  </div>

@@ -1,0 +1,33 @@
+<h1>Directives</h1>
+<div *ngIf="false, else abc">
+  If condition
+</div>
+<ng-template #abc>
+  Else Condition
+</ng-template>
+<h1>----------------------------</h1>
+<div *ngFor="let x of arr , index as i, odd as o, even as e, first as f, last as l">
+  <div *ngIf="l">
+    index-{{i}}={{x}}
+  </div>
+</div>
+<h1>----------------------------</h1>
+Enter value:-<input type="text" [(ngModel)]="send">
+<div [ngSwitch]="send">
+  <div *ngSwitchCase="'aman'">
+      Welcome aman !!!
+  </div>
+  <div *ngSwitchCase="'swap'">
+      Hi swapnil !!!
+  </div>
+  <div *ngSwitchCase="'1'">
+      Get one !!!
+  </div>
+  <div *ngSwitchDefault>
+    Invalid
+  </div>
+</div>
+<h1>----------------------------</h1>
+<div appCustomDirectives>
+  CustomDirectives works !
+</div> 

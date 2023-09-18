@@ -1,0 +1,19 @@
+<h1>FORM EXAMPLE</h1>
+<form #loginForm="ngForm" (ngSubmit)="saveData(loginForm.value)">
+<input type="text" name="uname" placeholder="Enter user name" ngModel><br><br>
+<input type="text" name="pass" placeholder="password" ngModel><br><br>
+<input type="submit" value="SAVE">
+</form>
+<input type="button" (click)="data(loginForm.value)" value="DATA">
+<h1>------------------------------------------------------</h1>
+
+<form [formGroup]="login" (ngSubmit)="saved()">
+  <input type="text" name="uname" placeholder="Enter user name" formControlName="uname"><br><br>
+  <input type="text" name="pass" placeholder="password" formControlName="pass"><br><br>
+  
+  <div formGroupName="address">
+    <input type="text" placeholder="enter city name" formControlName="city"><br><br>
+    <input type="text" placeholder="enter pin code" formControlName="pin"><br><br>
+  </div>
+  <input type="submit" value="SAVE">
+</form>

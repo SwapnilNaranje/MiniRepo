@@ -1,0 +1,13 @@
+
+{{name}}<br>
+{{name | uppercase}}<br>
+{{name | lowercase}}<br>
+{{todayDate}}<br>
+{{todayDate | date: "dd/MM/yyyy"}}<br>
+{{todayDate | date: "hh/mm/ss"}}
+
+Enter value=<input type="text" [(ngModel)]="num">
+{{num | custompipe}}
+<h1>--------------------------------------</h1>
+Enter value=<input type="text" [(ngModel)]="num">
+{{num | vote}}

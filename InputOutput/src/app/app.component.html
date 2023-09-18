@@ -1,0 +1,10 @@
+<h1>DATA BINDING IN ANGULAR</h1>
+User Id:-<input type="number" [(ngModel)]="user.uid"><pre></pre>
+User Name:-<input type="text" [(ngModel)]="user.uname"><pre></pre>
+User Password:-<input type="text" [(ngModel)]="user.password"><pre></pre>
+<button (click)="submit()">SUBMIT</button><pre></pre>
+Chiled Msg is:-{{childmsg}}
+
+<h1>--------------------------------------------------</h1>
+
+<app-home [data]="sendUser" (toParent)="getChildData($event)"></app-home>
